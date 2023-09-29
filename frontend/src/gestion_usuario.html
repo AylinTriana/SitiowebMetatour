@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios - Metatour</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="lime darken-3">
+                <div class="nav-wrapper container">
+                    <a href="/index.html" class="brand-logo left">Metatour</a>
+                    <ul class="right">
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="">Rutas</a></li>
+                        <li><a href="">Planificador</a></li>
+                        <li><a href="">Agenda Llanera</a></li>
+                        <li><a href="/carrito.html"><i class="material-icons right">add_shopping_cart</i>Carrito</a></li>
+                        <li><a href="/login.html">Login</a></li>
+                        <li><a href="gestion_usuario.html">Gestión de Usuarios</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Contenido de la página -->
+    <main class="container">
+        <h2 class="center-align">Gestión de Usuarios</h2>
+        <div class="row">
+            <!-- Formulario para gestionar usuarios -->
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <select id="tipo_usuario">
+                            <option value="" disabled selected>Seleccione el tipo de usuario</option>
+                            <option value="operador_turistico">Operador Turístico</option>
+                            <option value="administrador">Administrador</option>
+                        </select>
+                        <label for="tipo_usuario">Tipo de Usuario</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="nombre" type="text" class="validate">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="nit" type="text" class="validate">
+                        <label for="nit">NIT</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input id="sitio" type="text" class="validate">
+                        <label for="sitio">Sitio</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="contrasena" type="password" class="validate">
+                        <label for="contrasena">Contraseña</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input id="celular" type="text" class="validate">
+                        <label for="celular">Celular</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <!-- Botones para crear, actualizar y eliminar usuarios -->
+                        <button class="waves-effect waves-light btn">Crear</button>
+                        <button class="waves-effect waves-light btn">Actualizar</button>
+                        <button class="waves-effect waves-light btn">Eliminar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <!-- Pie de página (footer) -->
+    <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <!-- Contenido del pie de página -->
+        </div>
+    </footer>
+    
+    <!-- Scripts de Materialize CSS y tu propio JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Inicialización del componente de selección de Materialize -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+</html>
+

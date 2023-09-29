@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metatour</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+  <header>
+  <div class="navbar-fixed">
+      <nav class="lime darken-3">
+        <div class="nav-wrapper container">
+        <a href="/index.html" class="brand-logo left">Metatour</a>
+        <ul class="right">
+          <li><a href="/index.html">Inicio</a></li>
+        <li><a href="">Rutas</a></li>
+        <li><a href="">Planificador</a></li>
+        <li><a href="">Agenda Llanera</a></li>
+        <li><a href="/carrito.html">Carrito</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="gestion_usuario.html">Gestión de Usuarios</a></li>
+        </ul>
+        </div>
+      </nav>
+  </div>
+  </header>
+  
+  <main>
+  <section class="container section">
+    <div class="row">
+      <div class="col s12">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="Materialize/img/Fondo.png" alt="Caño Cristales">
+              <div class="caption center-align">
+                <h3>Caño Cristales</h3>
+                <h6 class="ligth">Para llegar se debe pasar el rio Guayabero en lancha, lo cual demora 20 minutos; luego se atraviesa una trocha en campero (autos estilo jeep que hay en la región), esto dura 25 minutos; y, luego caminar hacia la entrada del rio durante 1 hora aproximadamente.</h6>
+              </div>
+            </li>
+
+            <li>
+              <img src="Materialize/img/Inicio.png" alt="Caño Cristales">
+              <div class="caption center-align">
+                <h3>Caño Cristales</h3>
+                <h6 class="ligth">Para llegar se debe pasar el rio Guayabero en lancha, lo cual demora 20 minutos; luego se atraviesa una trocha en campero (autos estilo jeep que hay en la región), esto dura 25 minutos; y, luego caminar hacia la entrada del rio durante 1 hora aproximadamente.</h6>
+              </div>
+            </li> 
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="row center-align">
+    <button class="btn waves-effect waves-light btn-large lime darken-2 ">Más</button>
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col s6"> <!-- Dividir en 6 columnas -->
+            <div class="card">
+                <div class="card-content">
+                  Nuestro propósito dar a conocer la región del
+                  departamento del meta, como una región turística, con sus fincas eco-turísticas,
+                  agro-turísticas y sitios que por influencia de la guerra interna, hasta el momento
+                  no son reconocidos.
+                </div>
+            </div>
+        </div>
+        <div class="col s6"> <!-- Dividir en 6 columnas -->
+            <div class="card">
+                <div class="card-content">
+                    Nuestro principal beneficiado es el sector turístico del departamento del
+                    Meta, especialmente los sitios ecoturísticos y agroturísticos de las
+                    rutas del embrujo llanero y sierra de la macarena.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="container1 lime darken-3">
+    <div class="row">
+        <div class="col s12">
+            <h3 class="center-align white-text">Conoce más destinos</h3>
+        </div>
+        <div class="row center-align">
+          <a class="waves-effect waves-teal btn-large lime darken-2 white-text">Aqui</a>
+        </div>
+    </div>
+  </div>
+  </main>
+  
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h4 class="white-text">Metatour</h4>
+          <article>
+            <ul>
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Destinos</a></li>
+              <li><a href="">Servicios</a></li>
+              <li><a href="">Quienes Somos</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <ul>
+              <li><a href="">Contactanos</a></li>
+              <li><a href="">Terminos y Condiciones</a></li>
+              <li><a href="">Politicas de privacidad</a></li>
+            </ul>
+          </article>
+
+        </div>
+        
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">https://www.facebook.com/tu-perfil</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">https://twitter.com/tu-perfil</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">https://www.instagram.com/tu-perfil</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">https://www.youtube.com/tu-perfil</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  
+      <div class="footer-copyright">
+        <div class="container">
+        © 2023 Copyright
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </article>
+  </footer>
+      
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+          height:600,
+        });
+      });
+     </script>
+  </body>
+</html>

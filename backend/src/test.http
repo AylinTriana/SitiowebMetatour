@@ -1,0 +1,127 @@
+//Crear usuarios
+###
+POST http://localhost:10000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Daniel",
+    "apellido":"Ruiz",
+    "cedula":"1022477079",
+    "telefono":"3024301520",
+    "correo":"dan@gmail.com",
+    "direccion":"carrera 80a # 15c - 20",
+    "ciudad":"Bogota"
+    "profesion": "programador",
+    "cargo": "programador senior",
+    "salario": "5000000"
+}
+
+###
+POST http://localhost:10000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Nelly",
+    "apellido":"Triana",
+    "cedula":"51752189",
+    "telefono":"3213190444",
+    "correo":"nelly@gmail.com",
+    "direccion":"carrera 870 # 10 - 22",
+    "ciudad":"Armenia"
+    "profesion": "psicologa",
+    "cargo": "analista de talento humano",
+    "salario": "2500000"
+}
+
+###
+POST http://localhost:10000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Wendy",
+    "apellido":"Reyes",
+    "cedula":"1033874569",
+    "telefono":"3228745896",
+    "correo":"wen@gmail.com",
+    "direccion":"calle 15b # 30 - 45",
+    "ciudad":"Ibague"
+    "profesion": "programador",
+    "cargo": "programador junior",
+    "salario": "1800000"
+}
+
+###
+POST http://localhost:10000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Geraldine",
+    "apellido":"Torres",
+    "cedula":"1023547167",
+    "telefono":"3004507231",
+    "correo":"geral01@gmail.com",
+    "direccion":"carrera 33 # 09 - 16",
+    "ciudad":"Bogota"
+    "profesion": "administradora",
+    "cargo": "asistente de administracion",
+    "salario": "2000000"
+}
+
+###
+POST http://localhost:10000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Michael",
+    "apellido": "Acosta",
+    "cedula": "1044986513",
+    "telefono": "3114897652",
+    "correo": "mai@gmail.com",
+    "direccion": "carrera 45b # 10 - 15",
+    "ciudad": "Cali",
+    "profesion": "tecnico profesional",
+    "cargo": "desarrollador",
+    "salario": "2500000"
+}
+
+//Obtener todos los usuarios 
+###
+GET   http://localhost:10000/api/users/ HTTP/1.1
+Content-Type: application/json
+
+//Actualizar un usuario
+###
+PUT http://localhost:10000/api/users/64e95954f0e25032bcfdb387 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Michael",
+    "apellido":"Acosta",
+    "cedula":"1044986513",
+    "telefono":"3114897652",
+    "correo":"mai@gmail.com",
+    "direccion":"carrera 45b # 10 - 15",
+    "ciudad":"Cucuta"
+    "profesion": "tecnico profesional",
+    "cargo": "desarrollador",
+    "salario": "2500000"
+}
+
+//Buscar un usuario
+###
+GET   http://localhost:10000/api/users/6514c987349fe15778e09da2 HTTP/1.1
+Content-Type: application/json
+
+//Eliminar un usuario 
+###
+DELETE  http://localhost:10000/api/users/6514ca4e349fe15778e09da8 HTTP/1.1
+Content-Type: application/json
+
+//Obtener todos los usuarios 
+###
+GET   http://localhost:10000/api/users/ HTTP/1.1
+Content-Type: application/json
+
+
+
+
