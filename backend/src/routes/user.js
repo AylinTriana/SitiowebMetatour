@@ -55,5 +55,17 @@ router.delete('/users/:id', (req, res) => {
         .catch((error) => res.json({message: error}));
 }); 
 
+// Ruta para registrar un nuevo usuario
+router.post('/register', (req, res) => {
+    const userData = req.body; // Los datos del usuario se encuentran en req.body
+
+    // Crea un nuevo objeto de usuario utilizando el modelo
+    const user = new userModel(userData);
+
+    user 
+        .save()
+        .then((data) => res.json(data))
+        .catch((error) => res.json({ message: error }));
+});
 module.exports = router;
 

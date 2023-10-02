@@ -20,6 +20,9 @@ app.get("/",(req,res) => {
 app.use(express.json());
 app.use('/api',usuarioRutas);
 
+// Configura CORS para permitir solicitudes desde cualquier origen
+app.use(cors());
+
 //conexión a la BD
 mongoose
     .connect('mongodb+srv://aylintriana35:91152048At99@cluster0.8w6xw7e.mongodb.net/')

@@ -16,9 +16,10 @@ const userModel = mongoose.Schema({
         type: String,
         required: true
     },
-    correo:{
+    correo: {
         type: String,
-        required: true
+        required: true,
+        match: /^\S+@\S+\.\S+$/, // Este patrón verifica que el valor sea una dirección de correo electrónico válida.
     },
     direccion:{
         type: String,
